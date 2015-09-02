@@ -1,0 +1,16 @@
+{
+  "name": "ortc-adapter",
+  "version": "0.1.0",
+  "description": "Twilio's ORTC Adapter",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Twilio",
+    "ORTC",
+    "WebRTC"
+  ],
+  "author": "Mark Andrus Roberts <markandrusroberts@gmail.com>",
+  "license": "ISC"
+}
