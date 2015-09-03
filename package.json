@@ -12,5 +12,8 @@
     "WebRTC"
   ],
   "author": "Mark Andrus Roberts <markandrusroberts@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sdp-transform": "^1.4.1"
+  }
 }
