@@ -15,5 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "sdp-transform": "^1.4.1"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.1"
   }
 }
