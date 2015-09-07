@@ -1,13 +1,18 @@
-BUILD=js/index.js
+DIST=dist
+BUILD=$(DIST)/ortc-adapter.js
+
+LIB=$(shell find lib -name \*.js)
+SRC=src/ortc-adapter.js
+
 BROWSERIFY=./node_modules/browserify/bin/cmd.js
-SRC=$(shell find lib -name \*.js)
 
 all: $(BUILD)
 
 clean:
-	rm $(OUT)
+	rm -f $(BUILD)
 
-$(BUILD): $(BROWSERIFY) $(SRC)
-	$(BROWSERIFY) lib/index.js -o $@
+$(BUILD): $(BROWSERIFY) $(LIB) $(SRC)
+	mkdir -p $(DIST)
+	$(BROWSERIFY) $(MAIN) -o $@
 
 .PHONY: all clean
