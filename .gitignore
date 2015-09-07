@@ -1,2 +1,3 @@
+.lint
 dist/ortc-adapter.js
 node_modules
