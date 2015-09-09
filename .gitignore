@@ -1,3 +1,4 @@
-.lint
-dist/ortc-adapter.js
+.linted
+dist
 node_modules
+src/ortc-adapter-bundle.js
