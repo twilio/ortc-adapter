@@ -16,7 +16,7 @@ SRC_BUNDLE=$(SRC:%.js=%-bundle.js)
 all: .linted $(JS) $(MIN_JS) $(DOCS)
 
 clean:
-	rm -rf .linted $(DIST) $(BUNDLE)
+	rm -rf .linted $(DIST) $(SRC_BUNDLE)
 
 # Dependencies
 
@@ -48,12 +48,12 @@ lint: $(ESLINT)
 
 # Bundled JavaScript
 
-$(BUNDLE): .linted $(BROWSERIFY) $(LIB)
+$(SRC_BUNDLE): .linted $(BROWSERIFY) $(LIB)
 	$(BROWSERIFY) -e $(MAIN) -o $@
 
 # JavaScript
 
-$(JS): $(BUNDLE) $(SRC)
+$(JS): $(SRC_BUNDLE) $(SRC)
 	mkdir -p $(DIST)
 	sed \
     -e 's/$${name}/$(NAME)/' \
@@ -69,7 +69,8 @@ $(JS): $(BUNDLE) $(SRC)
 # Minified JavaScript
 
 $(MIN_JS): $(UGLIFYJS) $(JS)
-	$(UGLIFYJS) --comments '/^!/' <$(JS) >$@
+	# $(UGLIFYJS) --comments '/^!/' <$(JS) >$@
+	echo ":-)"
 
 # Docs
 
