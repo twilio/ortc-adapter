@@ -2,7 +2,7 @@
   "name": "ortc-adapter",
   "version": "0.1.0",
   "description": "ORTC to WebRTC Adapter",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "http://github.com/twilio/ortc-adapter.git"
