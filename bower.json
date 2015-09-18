@@ -10,7 +10,7 @@
   "authors": [
     "markandrusroberts@gmail.com"
   ],
-  "main": "dist/ortc-adapter.js",
+  "main": "dist/ortc-adapter.min.js",
   "keywords": [
     "ORTC",
     "WebRTC"

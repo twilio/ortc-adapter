@@ -36,7 +36,7 @@ Inclusion in the Browser
 ### Bower
 
 ```html
-<script src="bower_components/ortc-adapter/ortc-adapter.js"></script>
+<script src="bower_components/ortc-adapter/ortc-adapter.min.js"></script>
 ```
 
 ### NPM
@@ -45,5 +45,3 @@ Copy ortc-adapter.js to the desired location in your source tree, or use a tool
 like [browserify](http://browserify.org/) or
 [webpack](https://webpack.github.io/) to include the source as part of your
 build process.
-
-Refer to [examples](examples) for an example of how you can do this.
