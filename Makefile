@@ -69,8 +69,7 @@ $(JS): $(SRC_BUNDLE) $(SRC)
 # Minified JavaScript
 
 $(MIN_JS): $(UGLIFYJS) $(JS)
-	# $(UGLIFYJS) --comments '/^!/' <$(JS) >$@
-	echo ":-)"
+	$(UGLIFYJS) --comments '/^!/' <$(JS) >$@
 
 # Docs
 
