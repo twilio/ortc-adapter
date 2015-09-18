@@ -1,6 +1,10 @@
 ORTC to WebRTC adapter
 ======================
 
+[![NPM](https://nodei.co/npm/ortc-adapter.png?downloads=true&stars=true)](https://nodei.co/npm/ortc-adapter/)
+
+[![Build Status](https://secure.travis-ci.org/twilio/ortc-adapter.svg)](http://travis-ci.org/twilio/ortc-adapter)
+
 ortc-adapter is an implementation of WebRTC's
 [`RTCPeerConnection`](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection)
 and related APIs in terms of [Object RTC](http://ortc.org/) (ORTC). WebRTC
