@@ -60,6 +60,10 @@ $(JS): $(SRC_BUNDLE) $(SRC)
     -e 's/$${version}/$(VERSION)/' \
     $(SRC) \
       | sed \
+        -e '/#include "LICENSE.md"/ {' \
+          -e 'r LICENSE.md' \
+          -e 'd' \
+        -e '}' \
         -e "/require('\.\/ortc-adapter-bundle\')/ {" \
           -e 'r src/ortc-adapter-bundle.js' \
           -e 'd' \
