@@ -1,7 +1,6 @@
 /*! ${name}.js ${version}
 
 #include "LICENSE.md"
-
  */
 /* eslint strict:0 */
 (function(root, selectWebRTC) {
