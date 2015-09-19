@@ -107,7 +107,7 @@ gulp.task(srcBundleJs, function() {
 // --------------------
 
 gulp.task(distJs, [srcBundleJs], function() {
-  return gulp.src(srcBundleJs, { read: false })
+  return gulp.src(srcBundleJs)
     .pipe(newer(distJs))
     .pipe(then(function(files) {
       var nameRegExp = /\${name}/;
