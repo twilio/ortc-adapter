@@ -36,7 +36,7 @@
     exports.RTCIceCandidate = RTCIceCandidate;
     exports.RTCPeerConnection = webkitRTCPeerConnection;
     exports.RTCSessionDescription = RTCSessionDescription;
-  } else if (typeof RTCRtpSender) {
+  } else if (typeof RTCRtpSender !== 'undefined') {
     console.log('This appears to be an ORTC-compatible browser; using ORTC to WebRTC adapter.');
     exports.RTCIceCandidate = ortcAdapter.RTCIceCandidate;
     exports.RTCPeerConnection = ortcAdapter.RTCPeerConnection;
