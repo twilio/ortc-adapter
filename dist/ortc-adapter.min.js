@@ -1,4 +1,4 @@
-/*! ortc-adapter.js 0.1.3
+/*! ortc-adapter.js 0.1.4
 
 The following license applies to all parts of this software except as
 documented below.
