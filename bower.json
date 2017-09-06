@@ -1,6 +1,6 @@
 {
   "name": "ortc-adapter",
-  "version": "0.1.7",
+  "version": "0.1.8-dev",
   "description": "ORTC to WebRTC Adapter",
   "license": "BSD",
   "repository": {
